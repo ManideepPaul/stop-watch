@@ -42,6 +42,7 @@ function startStop() {
             minEl.innerText = `${minPad}`
         }
     }
+    reset.classList.remove("hidden")
 }
 
 function resetFun() {
@@ -55,7 +56,10 @@ function resetFun() {
     minEl.innerText = "00";
     secEl.innerText = "00";
     msEl.innerText = "00";
+    reset.classList.add("hidden");
 }
+
+
 
 
 

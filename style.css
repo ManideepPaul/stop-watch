@@ -30,8 +30,10 @@
 .controls {
     margin-top: 50px;
     display: flex;
-    width: 250px;
-    justify-content: flex-start;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
 
@@ -55,11 +57,20 @@
 .reset:hover {
     transition: 0.15s ease-in;
     scale: 1.1;
+    background-color: #ff8c00;
 }
 
 .reset:active {
     transition: 0.15s ease-in;
     scale: 1.1;
     rotate: -45deg;
+}
+
+.reset {
+    padding: 15px;
+    border-radius: 100%;
+}
+.hidden {
+    visibility: hidden;
 }
 
